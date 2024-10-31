@@ -14,5 +14,5 @@ const userSchema = new mongoose.Schema({
   
 export const Todo = mongoose.models.Todo || mongoose.model('Todo', todoSchema);
   
-export const User = mongoose.models.Todo || mongoose.model('User', userSchema);
+export const User = mongoose.models.User || mongoose.model('User', userSchema);
   

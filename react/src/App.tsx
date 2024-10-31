@@ -62,7 +62,7 @@ export function IndexPage() {
 function Signup() {
   const userSignupMutate = trpc.user.signup.useMutation({
     onSuccess: (data) => {
-      let token = data.token;
+      const token = data.token;
       localStorage.setItem("token", token);
       window.location = "/";
     }
